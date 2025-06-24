@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Portfolio Website</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    animation: {
+                        'bounce-slow': 'bounce 3s linear infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'pulse-slow': 'pulse 3s ease-in-out infinite',
+                        'gradient': 'gradient 8s ease infinite',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-white dark:gradient-background transition-all duration-500">
+    <!-- Header/Navigation -->
+    <header class="fixed w-full top-0 z-50 bg-white/90 dark:bg-gray-900/90 backdrop-blur-sm shadow-sm transition-all duration-500">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <div class="profile-container">
+                        <img src="https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg" 
+                             alt="Logo" 
+                             class="w-8 h-8 rounded-full mr-2 hover:scale-110 transition-transform duration-300">
+                    </div>
+                    <span class="text-sm font-semibold text-gray-800 dark:text-white transition-colors duration-300">ANISH KUMAR SINHA</span>
+                </div>
+                <div class="flex items-center space-x-8">
+                    <a href="index.html" class="nav-link text-sm text-gray-800 dark:text-white hover:text-blue-500 transition-colors duration-300">
+                        🏠 Home
+                    </a>
+                    <a href="about.html" class="nav-link text-sm text-gray-800 dark:text-white hover:text-blue-500 transition-colors duration-300">
+                        👋 About
+                    </a>
+                    <a href="resume.html" class="nav-link text-sm text-blue-500 hover:text-blue-600 transition-colors duration-300">
+                        📄 Resume
+                    </a>
+                    <a href="skills.html" class="nav-link text-sm text-gray-800 dark:text-white hover:text-blue-500 transition-colors duration-300">
+                        💡 Skills
+                    </a>
+                    <a href="projects.html" class="nav-link text-sm text-gray-800 dark:text-white hover:text-blue-500 transition-colors duration-300">
+                        🚀 Projects
+                    </a>
+                    <a href="contact.html" class="nav-link text-sm text-gray-800 dark:text-white hover:text-blue-500 transition-colors duration-300">
+                        ✉️ Contact
+                    </a>
+                    <button id="themeToggle" class="theme-toggle p-2 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-all duration-300">
+                        <span class="dark:hidden">🌙</span>
+                        <span class="hidden dark:block">☀️</span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 pt-24 pb-12">
+        <!-- Resume Section -->
+        <section class="max-w-4xl mx-auto">
+            <div class="text-center mb-16">
+                <h1 class="text-4xl font-bold text-gray-900 dark:text-white mb-4">Resume</h1>
+                <p class="text-xl text-gray-600 dark:text-gray-300">My Professional Journey</p>
+            </div>
+
+            <!-- Experience Section -->
+            <div class="mb-16">
+                <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-8">💼 Work Experience</h2>
+                <div class="space-y-8">
+                    <div class="card-hover bg-white dark:bg-gray-800/50 p-6 rounded-xl shadow-lg">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-900 dark:text-white">Senior Frontend Developer</h3>
+                                <p class="text-blue-500">Tech Solutions Inc.</p>
+                            </div>
+                            <span class="text-gray-600 dark:text-gray-300">2020 - Present</span>
+                        </div>
+                        <ul class="list-disc list-inside text-gray-600 dark:text-gray-300 space-y-2">
+                            <li>Led a team of 5 developers in building responsive web applications</li>
+                            <li>Implemented modern frontend technologies and best practices</li>
+                            <li>Improved site performance by 40% through optimization techniques</li>
+                        </ul>
+                    </div>
+
+                    <div class="card-hover bg-white dark:bg-gray-800/50 p-6 rounded-xl shadow-lg">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-900 dark:text-white">UI/UX Designer</h3>
+                                <p class="text-blue-500">Creative Agency</p>
+                            </div>
+                            <span class="text-gray-600 dark:text-gray-300">2018 - 2020</span>
+                        </div>
+                        <ul class="list-disc list-inside text-gray-600 dark:text-gray-300 space-y-2">
+                            <li>Designed user interfaces for web and mobile applications</li>
+                            <li>Conducted user research and usability testing</li>
+                            <li>Created wireframes and prototypes using modern design tools</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Education Section -->
+            <div class="mb-16">
+                <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-8">🎓 Education</h2>
+                <div class="space-y-8">
+                    <div class="card-hover bg-white dark:bg-gray-800/50 p-6 rounded-xl shadow-lg">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-900 dark:text-white">Master's in Computer Science</h3>
+                                <p class="text-blue-500">Tech University</p>
+                            </div>
+                            <span class="text-gray-600 dark:text-gray-300">2016 - 2018</span>
+                        </div>
+                        <p class="text-gray-600 dark:text-gray-300">Specialized in Human-Computer Interaction and Web Technologies</p>
+                    </div>
+
+                    <div class="card-hover bg-white dark:bg-gray-800/50 p-6 rounded-xl shadow-lg">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-900 dark:text-white">Bachelor's in Computer Science</h3>
+                                <p class="text-blue-500">State University</p>
+                            </div>
+                            <span class="text-gray-600 dark:text-gray-300">2012 - 2016</span>
+                        </div>
+                        <p class="text-gray-600 dark:text-gray-300">Dean's List, Computer Science Club President</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Download Resume -->
+            <div class="text-center">
+                <a href="#" class="inline-flex items-center px-8 py-3 bg-blue-500 text-white rounded-full hover:bg-blue-600 transition-colors">
+                    📥 Download Resume
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

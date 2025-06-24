@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    animation: {
+                        'bounce-slow': 'bounce 3s linear infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'pulse-slow': 'pulse 3s ease-in-out infinite',
+                        'gradient': 'gradient 8s ease infinite',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-white dark:gradient-background transition-all duration-500">
+    <!-- Header/Navigation -->
+    <header class="fixed w-full top-0 z-50 bg-white/90 dark:bg-gray-900/90 backdrop-blur-sm shadow-sm transition-all duration-500">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <div class="profile-container">
+                        <img src="https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg" 
+                             alt="Logo" 
+                             class="w-8 h-8 rounded-full mr-2 hover:scale-110 transition-transform duration-300">
+                    </div>
+                    <span class="text-sm font-semibold text-gray-800 dark:text-white transition-colors duration-300">ANISHA KUMAR SINHA</span>
+                </div>
+                <div class="flex items-center space-x-8">
+                    <a href="index.html" class="nav-link text-sm text-blue-500 hover:text-blue-600 transition-colors duration-300">
+                        🏠 Home
+                    </a>
+                    <a href="about.html" class="nav-link text-sm text-gray-800 dark:text-white hover:text-blue-500 transition-colors duration-300">
+                        👋 About
+                    </a>
+                    <a href="resume.html" class="nav-link text-sm text-gray-800 dark:text-white hover:text-blue-500 transition-colors duration-300">
+                        📄 Resume
+                    </a>
+                    <a href="skills.html" class="nav-link text-sm text-gray-800 dark:text-white hover:text-blue-500 transition-colors duration-300">
+                        💡 Skills
+                    </a>
+                    <a href="projects.html" class="nav-link text-sm text-gray-800 dark:text-white hover:text-blue-500 transition-colors duration-300">
+                        🚀 Projects
+                    </a>
+                    <a href="contact.html" class="nav-link text-sm text-gray-800 dark:text-white hover:text-blue-500 transition-colors duration-300">
+                        ✉️ Contact
+                    </a>
+                    <button id="themeToggle" class="theme-toggle p-2 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-all duration-300">
+                        <span class="dark:hidden">🌙</span>
+                        <span class="hidden dark:block">☀️</span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 pt-24 pb-12">
+        <!-- Hero Section -->
+        <section class="flex flex-col-reverse lg:flex-row items-center justify-between py-20">
+            <div class="lg:w-1/2 text-center lg:text-left animate-on-scroll">
+                <div class="inline-block bg-blue-100 dark:bg-blue-900/50 rounded-full px-4 py-1 mb-6 animate-bounce-slow backdrop-blur-sm">
+                    <span class="text-blue-500 dark:text-blue-400 text-sm">Hello! ✨</span>
+                </div>
+                <h1 class="text-4xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-4 transition-colors duration-300">
+                    I'm <span class="gradient-text">Anisha</span>
+                </h1>
+                <p class="text-lg text-gray-600 dark:text-gray-300 mb-8 transition-colors duration-300">
+                    UI/UX Designer and Frontend Developer & Teacher
+                </p>
+                <div class="flex flex-wrap justify-center lg:justify-start gap-4">
+                    <a href="projects.html" 
+                       class="button-hover px-8 py-3 bg-blue-500 text-white rounded-full hover:bg-blue-600 transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
+                        🚀 View Projects
+                    </a>
+                    <a href="contact.html" 
+                       class="button-hover px-8 py-3 border-2 border-blue-500 text-blue-500 rounded-full hover:bg-blue-50 dark:hover:bg-gray-800/50 transition-all duration-300 transform hover:scale-105 hover:shadow-lg backdrop-blur-sm">
+                        ✉️ Contact Me
+                    </a>
+                </div>
+            </div>
+            <div class="lg:w-1/2 mb-12 lg:mb-0 relative animate-float">
+                <div class="absolute inset-0 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-full blur-2xl opacity-20 group-hover:opacity-30 transition-opacity duration-500"></div>
+                <img src="https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg" 
+                     alt="Profile" 
+                     class="relative z-10 rounded-full w-64 h-64 object-cover mx-auto hover-lift transition-all duration-300 group-hover:scale-105">
+            </div>
+        </section>
+
+        <!-- Quick Links -->
+        <section class="py-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <a href="about.html" class="card-hover bg-white dark:bg-gray-800/50 p-6 rounded-xl shadow-lg text-center transition-all duration-300 backdrop-blur-sm group">
+                    <div class="text-4xl mb-4 transform group-hover:scale-110 transition-transform duration-300">👋</div>
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2 transition-colors duration-300">About Me</h3>
+                    <p class="text-gray-600 dark:text-gray-300 transition-colors duration-300">Learn more about my journey and experience</p>
+                </a>
+                <a href="skills.html" class="card-hover bg-white dark:bg-gray-800/50 p-6 rounded-xl shadow-lg text-center transition-all duration-300 backdrop-blur-sm group">
+                    <div class="text-4xl mb-4 transform group-hover:scale-110 transition-transform duration-300">💡</div>
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2 transition-colors duration-300">My Skills</h3>
+                    <p class="text-gray-600 dark:text-gray-300 transition-colors duration-300">Explore my technical expertise and tools</p>
+                </a>
+                <a href="projects.html" class="card-hover bg-white dark:bg-gray-800/50 p-6 rounded-xl shadow-lg text-center transition-all duration-300 backdrop-blur-sm group">
+                    <div class="text-4xl mb-4 transform group-hover:scale-110 transition-transform duration-300">🚀</div>
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2 transition-colors duration-300">Projects</h3>
+                    <p class="text-gray-600 dark:text-gray-300 transition-colors duration-300">View my latest work and achievements</p>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

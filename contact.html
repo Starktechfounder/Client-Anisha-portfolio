@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Portfolio Website</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    animation: {
+                        'bounce-slow': 'bounce 3s linear infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'pulse-slow': 'pulse 3s ease-in-out infinite',
+                        'gradient': 'gradient 8s ease infinite',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-white dark:gradient-background transition-all duration-500">
+    <!-- Header/Navigation -->
+    <header class="fixed w-full top-0 z-50 bg-white/90 dark:bg-gray-900/90 backdrop-blur-sm shadow-sm transition-all duration-500">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <div class="profile-container">
+                        <img src="https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg" 
+                             alt="Logo" 
+                             class="w-8 h-8 rounded-full mr-2 hover:scale-110 transition-transform duration-300">
+                    </div>
+                    <span class="text-sm font-semibold text-gray-800 dark:text-white transition-colors duration-300">ANISH KUMAR SINHA</span>
+                </div>
+                <div class="flex items-center space-x-8">
+                    <a href="index.html" class="nav-link text-sm text-gray-800 dark:text-white hover:text-blue-500 transition-colors duration-300">
+                        🏠 Home
+                    </a>
+                    <a href="about.html" class="nav-link text-sm text-gray-800 dark:text-white hover:text-blue-500 transition-colors duration-300">
+                        👋 About
+                    </a>
+                    <a href="resume.html" class="nav-link text-sm text-gray-800 dark:text-white hover:text-blue-500 transition-colors duration-300">
+                        📄 Resume
+                    </a>
+                    <a href="skills.html" class="nav-link text-sm text-gray-800 dark:text-white hover:text-blue-500 transition-colors duration-300">
+                        💡 Skills
+                    </a>
+                    <a href="projects.html" class="nav-link text-sm text-gray-800 dark:text-white hover:text-blue-500 transition-colors duration-300">
+                        🚀 Projects
+                    </a>
+                    <a href="contact.html" class="nav-link text-sm text-blue-500 hover:text-blue-600 transition-colors duration-300">
+                        ✉️ Contact
+                    </a>
+                    <button id="themeToggle" class="theme-toggle p-2 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-all duration-300">
+                        <span class="dark:hidden">🌙</span>
+                        <span class="hidden dark:block">☀️</span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 pt-24 pb-12">
+        <!-- Contact Section -->
+        <section class="max-w-4xl mx-auto">
+            <div class="text-center mb-16">
+                <h1 class="text-4xl font-bold text-gray-900 dark:text-white mb-4">Get in Touch</h1>
+                <p class="text-xl text-gray-600 dark:text-gray-300">Let's work together!</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Contact Info -->
+                <div class="space-y-8">
+                    <div class="card-hover bg-white dark:bg-gray-800/50 p-6 rounded-xl shadow-lg">
+                        <div class="flex items-center space-x-4">
+                            <div class="text-3xl text-blue-500">📧</div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Email</h3>
+                                <p class="text-gray-600 dark:text-gray-300">anish@example.com</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-hover bg-white dark:bg-gray-800/50 p-6 rounded-xl shadow-lg">
+                        <div class="flex items-center space-x-4">
+                            <div class="text-3xl text-blue-500">📱</div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Phone</h3>
+                                <p class="text-gray-600 dark:text-gray-300">+1 234 567 890</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-hover bg-white dark:bg-gray-800/50 p-6 rounded-xl shadow-lg">
+                        <div class="flex items-center space-x-4">
+                            <div class="text-3xl text-blue-500">📍</div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Location</h3>
+                                <p class="text-gray-600 dark:text-gray-300">San Francisco, CA</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-2xl text-gray-600 dark:text-gray-300 hover:text-blue-500 transition-colors">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="text-2xl text-gray-600 dark:text-gray-300 hover:text-blue-500 transition-colors">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="text-2xl text-gray-600 dark:text-gray-300 hover:text-blue-500 transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-2xl text-gray-600 dark:text-gray-300 hover:text-blue-500 transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="card-hover bg-white dark:bg-gray-800/50 p-8 rounded-xl shadow-lg">
+                    <form id="contactForm" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Name</label>
+                            <input type="text" id="name" name="name" 
+                                   class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:text-white"
+                                   required>
+                            <div class="error-message text-red-500 text-sm mt-1 hidden"></div>
+                        </div>
+
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Email</label>
+                            <input type="email" id="email" name="email" 
+                                   class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:text-white"
+                                   required>
+                            <div class="error-message text-red-500 text-sm mt-1 hidden"></div>
+                        </div>
+
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Message</label>
+                            <textarea id="message" name="message" rows="4" 
+                                      class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:text-white"
+                                      required></textarea>
+                            <div class="error-message text-red-500 text-sm mt-1 hidden"></div>
+                        </div>
+
+                        <button type="submit" 
+                                class="w-full px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors">
+                            Send Message
+                        </button>
+                    </form>
+
+                    <!-- Success Message -->
+                    <div id="successMessage" class="hidden mt-4 p-4 bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300 rounded-lg">
+                        Message sent successfully! I'll get back to you soon.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

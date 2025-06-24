@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills - Portfolio Website</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    animation: {
+                        'bounce-slow': 'bounce 3s linear infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'pulse-slow': 'pulse 3s ease-in-out infinite',
+                        'gradient': 'gradient 8s ease infinite',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-white dark:gradient-background transition-all duration-500">
+    <!-- Header/Navigation -->
+    <header class="fixed w-full top-0 z-50 bg-white/90 dark:bg-gray-900/90 backdrop-blur-sm shadow-sm transition-all duration-500">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <div class="profile-container">
+                        <img src="https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg" 
+                             alt="Logo" 
+                             class="w-8 h-8 rounded-full mr-2 hover:scale-110 transition-transform duration-300">
+                    </div>
+                    <span class="text-sm font-semibold text-gray-800 dark:text-white transition-colors duration-300">ANISH KUMAR SINHA</span>
+                </div>
+                <div class="flex items-center space-x-8">
+                    <a href="index.html" class="nav-link text-sm text-gray-800 dark:text-white hover:text-blue-500 transition-colors duration-300">
+                        🏠 Home
+                    </a>
+                    <a href="about.html" class="nav-link text-sm text-gray-800 dark:text-white hover:text-blue-500 transition-colors duration-300">
+                        👋 About
+                    </a>
+                    <a href="resume.html" class="nav-link text-sm text-gray-800 dark:text-white hover:text-blue-500 transition-colors duration-300">
+                        📄 Resume
+                    </a>
+                    <a href="skills.html" class="nav-link text-sm text-blue-500 hover:text-blue-600 transition-colors duration-300">
+                        💡 Skills
+                    </a>
+                    <a href="projects.html" class="nav-link text-sm text-gray-800 dark:text-white hover:text-blue-500 transition-colors duration-300">
+                        🚀 Projects
+                    </a>
+                    <a href="contact.html" class="nav-link text-sm text-gray-800 dark:text-white hover:text-blue-500 transition-colors duration-300">
+                        ✉️ Contact
+                    </a>
+                    <button id="themeToggle" class="theme-toggle p-2 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-all duration-300">
+                        <span class="dark:hidden">🌙</span>
+                        <span class="hidden dark:block">☀️</span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 pt-24 pb-12">
+        <!-- Skills Section -->
+        <section class="max-w-4xl mx-auto">
+            <div class="text-center mb-16">
+                <h1 class="text-4xl font-bold text-gray-900 dark:text-white mb-4">My Skills</h1>
+                <p class="text-xl text-gray-600 dark:text-gray-300">Technical Expertise & Tools</p>
+            </div>
+
+            <!-- Frontend Skills -->
+            <div class="mb-16">
+                <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-8">🎨 Frontend Development</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="card-hover bg-white dark:bg-gray-800/50 p-6 rounded-xl shadow-lg">
+                        <div class="mb-4">
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-900 dark:text-white font-semibold">HTML5/CSS3</span>
+                                <span class="text-blue-500">95%</span>
+                            </div>
+                            <div class="h-2 bg-gray-200 dark:bg-gray-700 rounded-full">
+                                <div class="h-2 bg-blue-500 rounded-full" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-900 dark:text-white font-semibold">JavaScript</span>
+                                <span class="text-blue-500">90%</span>
+                            </div>
+                            <div class="h-2 bg-gray-200 dark:bg-gray-700 rounded-full">
+                                <div class="h-2 bg-blue-500 rounded-full" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-900 dark:text-white font-semibold">React</span>
+                                <span class="text-blue-500">85%</span>
+                            </div>
+                            <div class="h-2 bg-gray-200 dark:bg-gray-700 rounded-full">
+                                <div class="h-2 bg-blue-500 rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-hover bg-white dark:bg-gray-800/50 p-6 rounded-xl shadow-lg">
+                        <div class="mb-4">
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-900 dark:text-white font-semibold">Vue.js</span>
+                                <span class="text-blue-500">80%</span>
+                            </div>
+                            <div class="h-2 bg-gray-200 dark:bg-gray-700 rounded-full">
+                                <div class="h-2 bg-blue-500 rounded-full" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-900 dark:text-white font-semibold">Tailwind CSS</span>
+                                <span class="text-blue-500">90%</span>
+                            </div>
+                            <div class="h-2 bg-gray-200 dark:bg-gray-700 rounded-full">
+                                <div class="h-2 bg-blue-500 rounded-full" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-900 dark:text-white font-semibold">TypeScript</span>
+                                <span class="text-blue-500">85%</span>
+                            </div>
+                            <div class="h-2 bg-gray-200 dark:bg-gray-700 rounded-full">
+                                <div class="h-2 bg-blue-500 rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Design Skills -->
+            <div class="mb-16">
+                <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-8">🎯 Design Skills</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="card-hover bg-white dark:bg-gray-800/50 p-6 rounded-xl shadow-lg">
+                        <div class="mb-4">
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-900 dark:text-white font-semibold">Figma</span>
+                                <span class="text-blue-500">95%</span>
+                            </div>
+                            <div class="h-2 bg-gray-200 dark:bg-gray-700 rounded-full">
+                                <div class="h-2 bg-blue-500 rounded-full" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-900 dark:text-white font-semibold">Adobe XD</span>
+                                <span class="text-blue-500">85%</span>
+                            </div>
+                            <div class="h-2 bg-gray-200 dark:bg-gray-700 rounded-full">
+                                <div class="h-2 bg-blue-500 rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-900 dark:text-white font-semibold">Sketch</span>
+                                <span class="text-blue-500">80%</span>
+                            </div>
+                            <div class="h-2 bg-gray-200 dark:bg-gray-700 rounded-full">
+                                <div class="h-2 bg-blue-500 rounded-full" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-hover bg-white dark:bg-gray-800/50 p-6 rounded-xl shadow-lg">
+                        <div class="mb-4">
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-900 dark:text-white font-semibold">UI Design</span>
+                                <span class="text-blue-500">90%</span>
+                            </div>
+                            <div class="h-2 bg-gray-200 dark:bg-gray-700 rounded-full">
+                                <div class="h-2 bg-blue-500 rounded-full" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-900 dark:text-white font-semibold">UX Design</span>
+                                <span class="text-blue-500">85%</span>
+                            </div>
+                            <div class="h-2 bg-gray-200 dark:bg-gray-700 rounded-full">
+                                <div class="h-2 bg-blue-500 rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-900 dark:text-white font-semibold">Prototyping</span>
+                                <span class="text-blue-500">90%</span>
+                            </div>
+                            <div class="h-2 bg-gray-200 dark:bg-gray-700 rounded-full">
+                                <div class="h-2 bg-blue-500 rounded-full" style="width: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tools & Technologies -->
+            <div>
+                <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-8">🛠️ Tools & Technologies</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="card-hover bg-white dark:bg-gray-800/50 p-4 rounded-xl shadow-lg text-center">
+                        <span class="text-gray-900 dark:text-white">Git</span>
+                    </div>
+                    <div class="card-hover bg-white dark:bg-gray-800/50 p-4 rounded-xl shadow-lg text-center">
+                        <span class="text-gray-900 dark:text-white">VS Code</span>
+                    </div>
+                    <div class="card-hover bg-white dark:bg-gray-800/50 p-4 rounded-xl shadow-lg text-center">
+                        <span class="text-gray-900 dark:text-white">npm</span>
+                    </div>
+                    <div class="card-hover bg-white dark:bg-gray-800/50 p-4 rounded-xl shadow-lg text-center">
+                        <span class="text-gray-900 dark:text-white">Webpack</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
