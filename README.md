@@ -60,7 +60,5 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## Author
 
-Anisha Kumar Sinha
-- Portfolio: [Your Portfolio URL]
-- GitHub: [Your GitHub Profile]
-- LinkedIn: [Your LinkedIn Profile]
+AKATI OMKAR REDDY 
+EMAIL : starktechfounder@gmail.com
